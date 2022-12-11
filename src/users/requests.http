@@ -1,0 +1,13 @@
+###
+// This file is meant to send an example request using the REST Client extension by Huachao Mao with VSCode.
+// You can then click on "Send Request" that appears before each request
+
+### Create a new user
+
+POST http://localhost:3000/auth/signup
+content-type: application/json
+
+{
+  "email": "test",
+  "password": "qwertyuuiii"
+}
