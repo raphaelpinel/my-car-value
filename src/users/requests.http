@@ -11,3 +11,8 @@ content-type: application/json
   "email": "testi2@email.com",
   "password": "qwertyuuiii2"
 }
+
+### Find a particular user with a given ID
+
+GET http://localhost:3000/auth/2
+content-type: application/json

@@ -5,6 +5,7 @@ import {
   AfterInsert,
   AfterUpdate,
   AfterRemove,
+  AfterLoad,
 } from 'typeorm';
 
 @Entity()
@@ -31,5 +32,9 @@ export class User {
   @AfterRemove()
   logRemove() {
     console.log('Removed User with id', this.id);
+  }
+  @AfterLoad()
+  logLoad() {
+    console.log('loaded entity with id', this.id);
   }
 }
